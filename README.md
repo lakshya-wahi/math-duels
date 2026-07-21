@@ -30,7 +30,5 @@ students.
 
 ## Background
 
-Math Duels was originally developed directly inside Roblox Studio.
-The repository presents the production place alongside reorganized
-source files for easier review and maintenance.
+Math Duels was originally developed directly inside Roblox Studio. The original Roblox place is included alongside selected production scripts and extracted configuration data for easier review.
 
