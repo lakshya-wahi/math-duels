@@ -29,6 +29,8 @@ using coins earned through gameplay.
 
 - Ranked matchmaking
 - Daily challenges
+- More question categories
+- Seasonal cosmetics
 
 ## Screenshots
 
@@ -47,5 +49,4 @@ using coins earned through gameplay.
 ### Inventory
 
 ![Inventory](screenshots/inventory.png)
-- More question categories
-- Seasonal cosmetics
+
