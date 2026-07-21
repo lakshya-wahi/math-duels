@@ -29,5 +29,23 @@ using coins earned through gameplay.
 
 - Ranked matchmaking
 - Daily challenges
+
+## Screenshots
+
+### Main Menu
+
+![Main Menu](screenshots/mainmenu.png)
+
+### Finding a Match
+
+![Finding Match](screenshots/findingmatch.png)
+
+### Match Found
+
+![Match Found](screenshots/matchfound.png)
+
+### Inventory
+
+![Inventory](screenshots/inventory.png)
 - More question categories
 - Seasonal cosmetics
