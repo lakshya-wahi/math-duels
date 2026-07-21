@@ -25,10 +25,6 @@ Players unlock
 
 using coins earned through gameplay.
 
-## Screenshots
-
-(Add screenshots here.)
-
 ## Future Ideas
 
 - Ranked matchmaking
