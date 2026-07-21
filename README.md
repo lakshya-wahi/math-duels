@@ -1,34 +1,34 @@
 # Math Duels
 
-A multiplayer educational Roblox game that combines competitive
-gameplay with mathematics practice for elementary and middle-school
-students.
+Math Duels is a multiplayer educational Roblox game where players
+compete by solving mathematics problems in real time.
 
-## Highlights
+The game has reached **20,000+ plays**.
 
-- Reached 20,000+ plays
-- Built real-time matchmaking and cross-server teleportation
-- Implemented persistent player profiles and unlockable cosmetics
-- Created responsive lobby, shop, avatar, banner, and emote systems
-- Developed entirely in Roblox Studio using Luau
+![Math Duels main menu](docs/screenshots/mainmenu.png)
 
-## Technical Features
+## Features
 
-- Cross-server matchmaking using MemoryStoreService
-- Server communication using MessagingService
-- Reserved-server teleportation using TeleportService
-- Persistent progress using DataStoreService
-- Client/server communication through RemoteEvents
-- Inventory and cosmetic-selection systems
+- Cross-server matchmaking for Classic and Survival modes
+- Reserved-server teleportation for head-to-head matches
+- Persistent credits, XP, cosmetics, and equipped items
+- Unlockable avatars, banners, and emotes
+- Responsive lobby, inventory, and matchmaking interfaces
 
-## Running the Project
+## Technical Systems
 
-1. Download `place/math_duels.rbxl`
-2. Open it in Roblox Studio
-3. Enable API services for datastore testing
-4. Test matchmaking using Roblox Studio's multi-client mode
+- `MemoryStoreService` for matchmaking queues
+- `MessagingService` for cross-server coordination
+- `TeleportService` for match server allocation
+- `DataStoreService` with retry logic and autosaving
+- Client-server communication through Roblox remotes
+- Validation of player-data updates
 
-## Background
+## Repository Structure
 
-Math Duels was originally developed directly inside Roblox Studio. The original Roblox place is included alongside selected production scripts and extracted configuration data for easier review.
-
+```text
+place/           Complete Roblox Studio place
+src/server/      Matchmaking, persistence, and teleport intake
+src/client/      Menu, loading, movement, shop, and game-pass logic
+src/shared/      Extracted item configuration
+docs/            Architecture, gameplay, and screenshots
