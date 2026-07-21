@@ -123,3 +123,8 @@ Additional documentation is available in the `docs/` folder.
 ## Project Background
 
 Math Duels was originally developed directly inside Roblox Studio as a complete multiplayer game. This repository includes the original Roblox place alongside representative production scripts and supporting documentation to make the implementation easier to review.
+
+> The shared modules centralize configuration extracted from the original
+> Roblox Studio project. The included production scripts remain faithful
+> to the currently published game and have not yet been fully migrated to
+> consume these modules.
