@@ -93,8 +93,8 @@ All cosmetic ownership is persisted across play sessions.
 
 Additional documentation is available in the `docs/` folder.
 
-- **architecture.md** — High-level overview of the project architecture.
-- **gameplay.md** — Gameplay loop, progression system, and screenshots.
+- [Architecture](docs/architecture.md) — High-level overview of the client-server architecture.
+- [Gameplay](docs/gameplay.md) — Gameplay loop and progression system.
 
 ---
 
