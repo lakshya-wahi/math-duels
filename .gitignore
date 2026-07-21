@@ -18,5 +18,3 @@ desktop.ini
 # Rojo build output
 build/
 dist/
-*.rbxl
-*.rbxlx
