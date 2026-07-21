@@ -46,7 +46,7 @@ math-duels/
 ├── src/
 │   ├── server/                 # Backend systems
 │   ├── client/                 # UI and gameplay scripts
-│   └── shared/                 # Shared configuration/data
+│   └── shared/                 # Extracted configuration and item metadata for technical review
 │
 ├── docs/
 │   ├── architecture.md
