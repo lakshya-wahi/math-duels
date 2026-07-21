@@ -1,34 +1,125 @@
 # Math Duels
 
-Math Duels is a multiplayer educational Roblox game where players
-compete by solving mathematics problems in real time.
+Math Duels is a real-time multiplayer educational game built on the Roblox platform where players compete by solving mathematics problems under time pressure.
 
-The game has reached **20,000+ plays**.
+The game has reached **20,000+ plays** and includes a complete multiplayer backend featuring matchmaking, persistent player progression, cosmetics, and server-to-server teleportation.
 
-![Math Duels main menu](docs/screenshots/mainmenu.png)
+![Main Menu](docs/screenshots/mainmenu.png)
+
+---
 
 ## Features
 
-- Cross-server matchmaking for Classic and Survival modes
-- Reserved-server teleportation for head-to-head matches
-- Persistent credits, XP, cosmetics, and equipped items
-- Unlockable avatars, banners, and emotes
-- Responsive lobby, inventory, and matchmaking interfaces
+- ⚔️ Real-time 1v1 multiplayer math battles
+- 🌐 Cross-server matchmaking
+- 🚀 Reserved server teleportation
+- 💾 Persistent player progression using DataStoreService
+- 🎨 Unlockable avatars, banners, and emotes
+- 🪙 Currency and cosmetic progression system
+- 🎵 Interactive menus, animations, and UI effects
 
-## Technical Systems
+---
 
-- `MemoryStoreService` for matchmaking queues
-- `MessagingService` for cross-server coordination
-- `TeleportService` for match server allocation
-- `DataStoreService` with retry logic and autosaving
-- Client-server communication through Roblox remotes
-- Validation of player-data updates
+## Technical Highlights
+
+This project was built entirely in **Roblox Studio** using **Luau**.
+
+Core backend systems include:
+
+- **MemoryStoreService** for matchmaking queues
+- **MessagingService** for server communication
+- **TeleportService** for reserved multiplayer servers
+- **DataStoreService** with retry logic and autosaving
+- Client/server architecture using RemoteEvents and RemoteFunctions
+- Persistent cosmetic inventories and player progression
+
+---
 
 ## Repository Structure
 
 ```text
-place/           Complete Roblox Studio place
-src/server/      Matchmaking, persistence, and teleport intake
-src/client/      Menu, loading, movement, shop, and game-pass logic
-src/shared/      Extracted item configuration
-docs/            Architecture, gameplay, and screenshots
+math-duels/
+│
+├── place/
+│   └── MathDuels.rbxl          # Complete Roblox Studio project
+│
+├── src/
+│   ├── server/                 # Backend systems
+│   ├── client/                 # UI and gameplay scripts
+│   └── shared/                 # Shared configuration/data
+│
+├── docs/
+│   ├── architecture.md
+│   ├── gameplay.md
+│   └── screenshots/
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+---
+
+## Backend Systems
+
+### Matchmaking
+
+Players join a matchmaking queue managed with Roblox's MemoryStoreService. Once two players are available, the server reserves a private instance and teleports both participants into the same match.
+
+### Player Persistence
+
+Player data is stored using Roblox DataStoreService and includes:
+
+- Credits
+- Experience
+- Owned cosmetics
+- Equipped cosmetics
+
+The save system includes retry logic to improve reliability during transient failures.
+
+### Cosmetics
+
+Players can purchase and equip:
+
+- Avatars
+- Banners
+- Emotes
+
+All cosmetic ownership is persisted across play sessions.
+
+---
+
+## Documentation
+
+Additional documentation is available in the `docs/` folder.
+
+- **architecture.md** — High-level overview of the project architecture.
+- **gameplay.md** — Gameplay loop, progression system, and screenshots.
+
+---
+
+## Running the Project
+
+1. Clone the repository.
+2. Open `place/MathDuels.rbxl` in Roblox Studio.
+3. Enable API Services if testing persistence.
+4. Use Roblox Studio's multiplayer testing tools to simulate multiple players.
+
+---
+
+## Technologies
+
+- Luau
+- Roblox Studio
+- DataStoreService
+- MemoryStoreService
+- MessagingService
+- TeleportService
+- RemoteEvents
+- RemoteFunctions
+
+---
+
+## Project Background
+
+Math Duels was originally developed directly inside Roblox Studio as a complete multiplayer game. This repository includes the original Roblox place alongside representative production scripts and supporting documentation to make the implementation easier to review.
