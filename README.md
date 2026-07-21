@@ -23,7 +23,7 @@ students.
 
 ## Running the Project
 
-1. Download `src/math_duels.rbxl`
+1. Download `place/math_duels.rbxl`
 2. Open it in Roblox Studio
 3. Enable API services for datastore testing
 4. Test matchmaking using Roblox Studio's multi-client mode
