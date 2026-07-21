@@ -25,13 +25,6 @@ Server
 
 ## Major Systems
 
-### Matchmaking
-
-- Players enter a queue.
-- Server pairs players.
-- Reserved server is created.
-- Players are teleported into the match.
-
 ### Player Data
 
 Persistent player data stores
@@ -60,6 +53,16 @@ Communication between client and server uses RemoteEvents and RemoteFunctions wh
 5. MessagingService communicates teleport information across lobby servers.
 6. Both players are teleported with match metadata.
 
+### Shop System
+
+The shop currently uses per-item LocalScripts attached to individual
+cosmetic cards. Each handler reads the item's price and metadata from
+the UI hierarchy, checks the player's current credits, and sends an
+ownership update to the server.
+
+This design reflects the original Roblox Studio implementation. A
+future refactor could replace the repeated handlers with one centralized
+controller backed by `ItemCatalog.lua`.
 ## Persistence Flow
 
 1. Player data is loaded when the player joins.
