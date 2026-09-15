@@ -2,6 +2,8 @@
 
 Math Duels is a real-time multiplayer educational game built on the Roblox platform where players compete by solving mathematics problems under time pressure.
 
+![Link](https://www.roblox.com/games/79348082970925/Math-Duels)
+
 The game has reached **20,000+ plays** and includes a complete multiplayer backend featuring matchmaking, persistent player progression, cosmetics, and server-to-server teleportation.
 
 ![Main Menu](docs/screenshots/mainmenu.png)
